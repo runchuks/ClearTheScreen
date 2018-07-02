@@ -1,0 +1,337 @@
+
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url(6ctj7dg7i3yyu6h1WpJEbxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url(r4gr7yVW_WKq2Iup9aEixvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Ranchers', cursive;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5efc1;
+    overflow: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+}
+
+.debug {
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    position: absolute;
+}
+
+.column {
+    position: absolute;
+    bottom: 0px;
+}
+
+.block {
+}
+
+.block.time {
+    background-image: url(../img/stopwatch.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.block.need-to-delete{
+    outline: 0;
+    background-color: transparent !important;
+}
+
+.game-menu{
+    margin-right: auto;
+    margin-left: auto;
+}
+.game-menu .logo{
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 77px;
+}
+.game-menu .menu .menu-item.deactive{
+    background-color: #557b83;
+}
+.menu-item {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0px;
+    background-color: #39aea9;
+    color: black;
+    height: 25px;
+    line-height: 25px;
+}
+.navigation {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: none;
+    border-bottom: 2px solid;
+}
+
+.ads {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    line-height: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.game-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51,51,51,.5);
+    line-height: 100%;
+    text-align: center;
+    color: beige;
+    display: none;
+}
+
+.pop {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: relative;
+}
+
+.game-over-text {
+    top: 20px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+}
+
+.redo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 200px;
+    top: 90px;
+}
+
+.repeat {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/repeat.png);
+    background-size: contain;
+    margin-right: 40px;
+    float: left;
+}
+
+.exit {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/emergency-exit.png);
+    background-size: contain;
+    float: left;
+}
+
+.game-over-score {
+    top: 50px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+}
+
+.overLogo {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: bisque;
+    z-index: 9999999999;
+}
+
+.hight-score {
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    display: none;
+}
+
+.close-hight-score {
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/left-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 143px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 112px;
+}
+
+.play-score {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    font-size: 21px;
+}
+
+.game-over-reason {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    z-index: 999;
+    white-space: nowrap;
+    display: none; 
+}
+
+.game-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    overflow: hidden;
+    bottom: 50px;
+    transform: rotate(180deg);
+}
+
+.game-over-high-score {
+    bottom: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    display: none;
+}
+
+.stat-item .value {
+    margin-left: 19px;
+    font-size: 17px;
+}
+
+.stat-item div {
+    float: left;
+    font-size: 17px;
+    width: 130px;
+    text-align: left;
+}
+
+.stat-item {
+    margin-left: 30px;
+    overflow: auto;
+}
+
+.game-mode {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.to-menu {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url(../img/left-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.time-trial-timer {
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    display: none;
+    right: 0;
+    top: 45px;
+    width: 100%;
+    height: 5px;
+}
+
+.time-trial-timer div{
+    height: inherit;
+    background-color: red;
+    width: 0%;
+}
+
+.boom {
+    background-color: black !important;
+}

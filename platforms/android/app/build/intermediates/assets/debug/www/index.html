@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Clear The Screen</title>
+    </head>
+    <body>
+        <div class="overLogo"></div>
+        <div class="navigation">
+            <div class="play-score"></div>
+            <div class="to-menu"></div>
+        </div>
+        <div class="wrap">
+            <div class="game-menu">
+                <div class="logo">
+                    CLEAR THE SCREEN
+                </div>
+                <div class="menu">
+                </div>
+            </div>
+            <div class="game-over-reason"></div>
+            <div class="game-over">
+                <div class="pop">
+                    <div class="game-over-text">GAME OVER!</div>
+                    <div class="game-over-score"></div>
+                    <div class="game-over-high-score"></div>
+                    <div class="redo">
+                        <div class="repeat" id="replay"></div>
+                        <div class="exit" id="to-main-menu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hight-score">
+                    <div class="close-hight-score"></div>
+                    <div class="game-mode">Game</div>
+                    <div class="stat-item blocks-removed"><div>Blocks removed:</div><div class="value"></div></div>
+                    <div class="stat-item total-playtime"><div>Total playtime:</div><div class="value"></div></div>
+                    <div class="game-mode">Free roam</div>
+                    <div class="stat-item games-played"><div>Games played:</div><div class="value"></div></div>
+                    <div class="stat-item games-won"><div>Games won:</div><div class="value"></div></div>
+                    <div class="stat-item h-score"><div>Highest score:</div><div class="value"></div></div>
+                    <div class="game-mode">Time trial</div>
+                    <div class="stat-item games-played-tt"><div>Games played:</div><div class="value"></div></div>
+                    <div class="stat-item h-score-tt"><div>Highest score:</div><div class="value"></div></div>
+                    <div class="stat-item stat-games-time-trial-longest"><div>Longest game:</div><div class="value"></div></div>
+                    <div class="stat-item time-gained"><div>Time gained:</div><div class="value"></div></div>
+                    
+                    <div class="reset-stats menu-item">Reset stats</div>
+            </div>
+            <div class="time-trial-timer"><div></div></div>
+        </div>
+        <div class="ads"></div>
+        <div class="debug">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+        </div>
+        <div id="variables">
+            <input type="hidden" value="0" id="blockCountH" />
+            <input type="hidden" value="0" id="blockCountV" />
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
